@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="/common.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/fonts/oswald.css" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <title>Главная</title>
+</head>
+
+<body>
+  <main class="main">
+    <section class="form container">
+      <div class="form__inner">
+        <h1 class="form__h1">Reduslim</h1>
+        <div class="form__wrapper-img">
+          <img src="/static/images/boll.png" alt="boll" class="form__boll">
+          <img src="/static/images/reduslim.png" alt="reduslim" class="form__reduslim">
+        </div>
+        <span class="form__subtitle">ECO</span>
+      </div>
+      <div class="form__inner-two">
+        <h2 class="form__title">Сделай шаг <br class="form__br"> к выздоровлению</h2>
+        <form class="form__form">
+          <div class="form__block">
+            <span class="form__title-name">Ваше</span>
+            <span class="form__title-name form__title-name_green">Имя</span>
+          </div>
+          <input class="form__input" type="text" placeholder="Алексей" aria-label="Name" title="Name">
+          <div class="form__block">
+            <span class="form__title-name">Ваш</span>
+            <span class="form__title-name form__title-name_green">Телефон</span>
+          </div>
+          <div class="form__block">
+            <input class="form__input form__input_phone" type="text" placeholder="+7 (123) 456 78-90" aria-label="phone"
+              title="phone">
+            <input type="text" hidden name="country" id="country" value="Russia">
+            <div class="select">
+              <div class="current-value">
+                <div class="value-wrap">
+                  <span>RU</span>
+                  <img src="/static/images/ru.png">
+                </div>
+                <img id="deploy-btn" class="arrow" data-state="rolled" src="/static/images/arrow.png">
+              </div>
+              <div class="options-list">
+                <div class="option current">
+                  <span>RU</span>
+                  <img src="/static/images/ru.png">
+                </div>
+                <div class="option">
+                  <span>ENG</span>
+                  <img src="/static/images/ru.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="form__button" type="submit">Заказать <span class="form__arrow">➞</span></button>
+        </form>
+      </div>
+      <div class="form__bottom-block">
+        <span class="form__bottom-title">Trusted</span>
+        <img class="form__lock" src="/static/images/lock.png" alt="lock">
+        <span class="form__bottom-title">Secure</span>
+      </div>
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+  <script src="select.js"></script>
+</body>
+
+</html>
